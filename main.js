@@ -14,7 +14,7 @@ function initMap() {
  
   map.addListener('click', (e) => {
     $.getJSON(
-      "https://api.openweathermap.org/data/2.5/weather?lat="+e.latLng.lat()+"&lon="+e.latLng.lng()+"&appid=1b5ee5a1a74d624a74750350327ea372",
+      "https://api.openweathermap.org/data/2.5/weather?lat="+e.latLng.lat()+"&lon="+e.latLng.lng()+"&appid=a969fbc3452cf070c090cb3b24fdd674",
       function(json){
         var t = parseInt(json.main.temp-273.15);
         infowindow.setContent(
